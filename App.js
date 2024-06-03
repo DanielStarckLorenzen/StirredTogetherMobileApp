@@ -1,11 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, View, SafeAreaView } from 'react-native';
+import { WebView } from 'react-native-webview';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <SafeAreaView style={styles.safeAreaTop} />
+      <View style={styles.webViewContainer}>
+        <WebView
+          source={{ uri: 'https://stirredtogether.web.app' }}
+          style={{ flex: 1 }}
+        />
+      </View>
+      <SafeAreaView style={styles.safeAreaBottom} />
     </View>
   );
 }
@@ -13,8 +20,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  },
+  safeAreaTop: {
+    backgroundColor: '#fff3f3',
+  },
+  webViewContainer: {
+    flex: 1,
+  },
+  safeAreaBottom: {
+    backgroundColor: '#ffffff',
   },
 });
