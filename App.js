@@ -10,6 +10,17 @@ export default function App() {
         <WebView
           source={{ uri: 'https://stirredtogether.web.app' }}
           style={{ flex: 1 }}
+          mediaPlaybackRequiresUserAction={false}
+          allowsInlineMediaPlayback={true}
+          javaScriptEnabled={true}
+          domStorageEnabled={true}
+          startInLoadingState={true}
+          allowFileAccess={true}
+          allowsFullscreenVideo={true}
+          originWhitelist={['*']}
+          allowFileAccessFromFileURLs={true}
+          allowUniversalAccessFromFileURLs={true}
+          mixedContentMode="always"
         />
       </View>
       <SafeAreaView style={styles.safeAreaBottom} />
