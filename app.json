@@ -2,7 +2,7 @@
   "expo": {
     "name": "StirredTogetherApp",
     "slug": "StirredTogetherApp",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/logo-symbol.png",
     "userInterfaceStyle": "light",
@@ -13,7 +13,11 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.lordstarck.StirredTogetherApp"
+      "bundleIdentifier": "com.lordstarck.StirredTogetherApp",
+      "infoPlist": {
+        "NSCameraUsageDescription": "We need access to your camera to allow you to take profile pictures.",
+        "NSPhotoLibraryUsageDescription": "We need access to your photo library to allow you to upload profile pictures."
+      }
     },
     "android": {
       "adaptiveIcon": {
