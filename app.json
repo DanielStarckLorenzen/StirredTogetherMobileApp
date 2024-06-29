@@ -2,7 +2,7 @@
   "expo": {
     "name": "StirredTogetherApp",
     "slug": "StirredTogetherApp",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./assets/logo-symbol.png",
     "userInterfaceStyle": "light",
@@ -23,7 +23,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/logo-with-text.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.lordstarck.StirredTogetherApp"
     },
     "web": {
       "favicon": "./assets/logo-symbol.png"
